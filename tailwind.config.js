@@ -7,6 +7,7 @@ module.exports = {
         primary: "#00F87C",
         secondary: "#D9D9D9",
         cream: "#F7F7F7",
+        forget: "#6941C6",
       },
       fontFamily: {
         "articulat-regular": ["Articulat-regular"],
@@ -15,5 +16,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
