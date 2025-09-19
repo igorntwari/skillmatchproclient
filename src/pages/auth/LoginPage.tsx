@@ -47,7 +47,11 @@ function LoginPage() {
               />
               <p className="">Remember for 30 days</p>
             </div>
-            <span className="text-forget cursor-pointer">Forget password</span>
+            <Link to="/forgotPassword" className="text-forget cursor-pointer">
+              <span className="text-forget cursor-pointer">
+                Forget password
+              </span>
+            </Link>
           </div>
         </div>
         <div>

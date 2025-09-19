@@ -1,40 +1,37 @@
 import { Button } from "../../components/ui/button";
 import { TypographyH2 } from "../../typography/Typography";
 import { Input } from "../../components/ui/input";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import ProgressiveBar from "../../components/progressiveBar";
 
-function SignUpPage() {
+function CreatePassword() {
   return (
     <div className="flex justify-center align-center h-full">
       <form
         // onSubmit={}
-        className="bg-no-repeat  bg-cover p-16 py-16 px-5 md:p-16 md:px-32 space-y-10 flex flex-col items-start justify-center"
+        className="bg-no-repeat bg-cover p-16 py-16 px-5 md:p-16 md:px-32 space-y-10 flex flex-col items-start justify-center"
         style={{ backgroundImage: "url('/images/scratchesBack.webp')" }}
       >
-        <ProgressiveBar step={1} />
+        <ProgressiveBar step={2} />
         <div className="flex flex-col gap-3">
-          <TypographyH2>Sign up</TypographyH2>
-          <span className="text-base">
-            Welcome back! Please enter your details.
-          </span>
+          <TypographyH2>Create a Password</TypographyH2>
         </div>
         <div className="flex flex-col  gap-5">
           <div className="flex flex-col items-start gap-2">
-            <span className="text-sm">Name</span>
+            <span className="text-sm">Password</span>
             <Input
               type="text"
-              placeholder="Enter your name"
+              placeholder="Create Password"
               className="w-[360px] text-start"
               // onChange={handleInputChange}
               // value={email}
             />
           </div>
           <div className="flex flex-col items-start gap-2">
-            <span className="text-sm">Email</span>
+            <span className="text-sm">Confirm Password</span>
             <Input
               type="text"
-              placeholder="Enter your Email"
+              placeholder="Confirm Password"
               className="w-[360px] text-start"
               // onChange={handleInputChange}
               // value={email}
@@ -42,19 +39,11 @@ function SignUpPage() {
           </div>
         </div>
         <div>
-          <Link to="/createPassword" className=" cursor-pointer">
-            <Button size="lg">Next</Button>
-          </Link>
-        </div>
-        <div className="space-x-1 text-xs">
-          <span className="">Already have an account?</span>
-          <Link to="/login" className="text-forget cursor-pointer">
-            Sign In
-          </Link>
+          <Button size="lg">Next</Button>
         </div>
       </form>
     </div>
   );
 }
 
-export default SignUpPage;
+export default CreatePassword;
