@@ -5,6 +5,8 @@ import SignUpPage from "./pages/auth/SignUpPage";
 import CreatePassword from "./pages/auth/CreatePassword";
 import ForgotPassword from "./pages/auth/forgotPassowrd";
 import ResetPassword from "./pages/auth/ResetPassword";
+import SetNewPassword from "./pages/auth/SetNewPassword";
+import UpdatedPassword from "./pages/auth/UpdatedPassword";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/createPassword" element={<CreatePassword />} />
         <Route path="/forgotPassword" element={<ForgotPassword />} />
         <Route path="/resetPassword" element={<ResetPassword />} />
+        <Route path="/setnewpassword" element={<SetNewPassword />} />
+        <Route path="/updatedPassword" element={<UpdatedPassword />} />
       </Routes>
     </Router>
   );

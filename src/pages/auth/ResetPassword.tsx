@@ -42,7 +42,7 @@ function ResetPassword() {
           </span>
         </div>
         <div className="flex flex-col gap-3">
-          <Link to="/resetPassword" className=" cursor-pointer">
+          <Link to="/setnewpassword" className=" cursor-pointer">
             <Button size="lg">Continue</Button>
           </Link>
           <Button asChild size="lg" variant="secondary">
