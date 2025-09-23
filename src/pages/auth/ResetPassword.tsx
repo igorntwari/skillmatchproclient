@@ -21,12 +21,12 @@ function ResetPassword() {
         <div className="flex flex-col text-center gap-3">
           <TypographyH2>Password Reset</TypographyH2>
           <span className="text-base text-center">
-            We sent code to example@gmail.com
+            We sent code to <span className="font-bold">example@gmail.com</span>
           </span>
         </div>
         <div className="flex flex-col  gap-5">
           <div className="flex flex-col items-start gap-2">
-            <span className="text-sm">Email</span>
+            <span className="text-sm">Secure code</span>
             <InputOTP maxLength={6}>
               <InputOTPGroup>
                 <InputOTPSlot index={0} />
@@ -36,10 +36,14 @@ function ResetPassword() {
               </InputOTPGroup>
             </InputOTP>
           </div>
+          <span className="text-base text-center">
+            Didn’t receive the code?{" "}
+            <span className="text-primary underline text-sm">click here</span>
+          </span>
         </div>
         <div className="flex flex-col gap-3">
           <Link to="/resetPassword" className=" cursor-pointer">
-            <Button size="lg">Reset password</Button>
+            <Button size="lg">Continue</Button>
           </Link>
           <Button asChild size="lg" variant="secondary">
             <Link to="/login">
